@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+h1 {
+    font-size: 30px;
+}
+li {
+    list-style: none;
+}
+button {
+    padding: 1rem 2rem;
+    border: 2px solid rgb(54, 133, 137);
+    border-radius: 5px;
+    color: rgb(54, 133, 137);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* NAV BAR*/
+header {
+    background-color: black;
+}
+.logo {
+    width: 10%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+.nav-info {
+    display: flex;
+}
+.nav-info ul {
+    display: flex;
+    list-style: none;
+}
+.search,
+.nav-info li {
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background: rgb(50, 50, 50);
+    color:white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.search:hover {
+    color: rgb(239, 235, 235)
+}
+.nav-info li {
+    background: black;
+}
+.nav-info a {
+    color: white;
+    text-decoration: none;
+}
+.nav-info li:hover {
+    background: rgb(50, 50, 50);
+}
+.nav-info i {
+    color: white;
+}
+.fa-globe,
+.fa-search {
+    margin-right: 0.5rem;
+}
+/* HERO SECTION */
+.hero {
+    background: black;
+    color: white;
+    /*padding: 2rem 3rem;*/
+}
+.hero__container {
+    width: 100%;
+}
+
+.hero img {
+    width: 30%;
+}
+.hero__text-container {
+    display: flex;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+.online-experience {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.2rem;
+    border-radius: 5px;
+    width: 30%;
+}
+.sticky-footer-container {
+    width: 100%;
+    padding: 1rem 0 1rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
+    background: black;
+}
+.sticky-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+.sticky-btn {
+    color: white;
+    background-color: rgb(238, 87, 93);
+    border: 2px solid rgb(238, 87, 93);
+}
+/* COSA FARETE SECTION */
+.cosa-farete,
+.host,
+.portare,
+.partecipare,
+.tenere {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 4rem;
+    color: rgb(72, 72, 72);
+}
+.text-title {
+    width: 70%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 2rem;
+}
+.text {
+    line-height: 2rem;
+}
+.text p {
+    margin-bottom: 2rem;
+}
+
+/* PROVA SECTION */
+.prova {
+    background: rgb(242, 242, 242);
+    color: rgb(72, 72, 72);
+    padding: 6rem 4rem;
+    display: flex;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 20%;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+}
+.card i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+
+/* HOST SECTION */
+.host,
+.portare,
+.partecipare,
+.tenere,
+.portare {
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+    color: rgb(72, 72, 72);
+}
+.host img {
+    border-radius: 50%;
+    width: 20%;
+}
+.host p {
+    margin-bottom: 2rem;
+}
+
+/* PORTARE SECTION */
+
+.portare p {
+    padding: 1rem 0 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+.portare i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+.portare .text-title {
+    width: 45%;
+}
+
+/* PARTECIPARE SECTION */
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.partecipare-card {
+    margin: 1rem 0 2rem;
+    padding: 1.5rem;
+    background: rgb(242, 242, 242);
+    border-radius: 10px;
+}
+.partecipare-card p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.partecipare a {
+    color: black;
+    font-weight: bold;
+}
+.partecipare .text-title {
+    width: 55%;
+}
+
+/* TENERE SECTION */
+.tenere-card {
+    display: flex;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid lightgrey
+}
+.tenere-card h2 {
+    width: 45%;
+}
+.tenere-card p {
+    margin-bottom: 0.5rem;
+}
+.tenere .text-title {
+    width: 80%;
+}
+
+/* ESPERIENZE */
+.esperienze-container {
+    display: flex;
+    color: rgb(72, 72, 72);
+}
+.esperienze h1 {
+    position: relative;
+    top: 0rem;
+    margin-bottom: 2rem;
+    color: rgb(72, 72, 72);
+}
+.esperienze img {
+    width: 100%;
+    border-radius: 10px;
+}
+.esperienze-card {
+    margin: 0.5rem;
+    width: 30%;
+}
+.esperienze a {
+    padding: 2rem 0;
+}
+
+/* FOOTER */
+footer {
+    background: rgb(242, 242, 242);
+    padding: 2rem 0;
+    color: rgb(72, 72, 72);
+    font-size: 14px;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+.li-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-list li {
+    line-height: 2.5rem;
+}
+.bottom-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.bottom-footer li {
+    margin-right: 1rem;
+}
+.footer-info ul {
+    display: flex;
+}
+.footer-info a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+.languages {
+    display: flex;
+    font-weight: bold;
+}
+.languages a {
+    color: rgb(72, 72, 72);
+}
+.social-media i {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+    .cards-container {
+        display: block;
+    }
+    .card {
+        display: flex;
+        margin-bottom: 2rem;
+        width: 100%; 
+    }
+    .card-title {
+        display: none;
+    }
+    .card i {
+        margin: 0 2rem;
+    }
+    .prova .text-title {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .cosa-farete,
+    .prova,
+    .host,
+    .portare,
+    .partecipare {
+        display: block;
+        padding: 2rem;
+    }
+    .text-title {
+        position: relative;
+        top: 0rem;
+        margin-bottom: 2rem;
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .prova .text-title {
+        width: 100%;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid lightgrey;
+    }
+    .prova p {
+        font-size: 14px;
+    }
+    .prova i {
+        margin-left: 1rem;
+    }
+   
+}
+
