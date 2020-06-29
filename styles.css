@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* GLOBAL STYLES */
 body {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -45,7 +46,7 @@ nav {
 }
 .search,
 .nav-info li {
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 25px;
     border: none;
     background: rgb(50, 50, 50);
@@ -77,32 +78,84 @@ nav {
 .hero {
     background: black;
     color: white;
-    /*padding: 2rem 3rem;*/
+    width:100%;
+    padding-bottom: 4rem;
 }
-.hero__container {
-    width: 100%;
-}
-
-.hero img {
-    width: 30%;
-}
-.hero__text-container {
+.hero-images-container {
     display: flex;
-    padding-top: 1rem;
-    line-height: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
 }
-.online-experience {
+.hero img {
+    width:30%;
+}
+.hero p {
+    font-size: 12px;
+}
+.main-content-container {
+    display: flex;
+    margin-top: 2rem;
+    margin-left:4rem;
+}
+.segreti-container h2{
+    font-size: 30px;
+}
+.segreti-container {
+    width: 20%;
+}
+.online,
+.span-performance {
     background: white;
     color: black;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0.2rem;
     border-radius: 5px;
-    width: 30%;
+    padding: 0.2rem;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
 }
-.online-experience-main-text {
-    width: 100%;
+.online i {
+    font-size: 10px;
+    margin-right: 0.2rem;
+}
+.span-rating {
+    margin: 0.5rem 0;
+}
+.span-performance {
+    color:white;
+    background: rgb(50, 50, 50);
+    font-weight:normal;
+    font-size: 11px;
+    margin-right: 0.3rem;
+}
+.hero-btn {
+    color: white;
+    border:2px solid white;
+    background: black;
+    margin-top: 2rem;
+}
+.tablet-container {
+    margin-left: 9rem;
+    color: lightgray;
+}
+.tablet {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.tablet img {
+    width:5%;
+}
+.tablet-title {
+    color: gray;
+}
+.tablet-icons {
+    display: flex;
+    margin-top: 2rem;
+}
+.tablet-icon {
+    margin-right: 4rem;
 }
 .sticky-footer-container {
     width: 100%;
@@ -115,6 +168,7 @@ nav {
 .sticky-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 2rem;
 }
 .sticky-btn {
