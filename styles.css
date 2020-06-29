@@ -101,6 +101,9 @@ nav {
     border-radius: 5px;
     width: 30%;
 }
+.online-experience-main-text {
+    width: 100%;
+}
 .sticky-footer-container {
     width: 100%;
     padding: 1rem 0 1rem;
@@ -131,7 +134,8 @@ nav {
     padding: 4rem 4rem;
     color: rgb(72, 72, 72);
 }
-.text-title {
+.text-title,
+.recensioni-header {
     width: 70%;
     position: sticky;
     position: -webkit-sticky;
@@ -175,7 +179,8 @@ h2{
 .portare,
 .partecipare,
 .tenere,
-.portare {
+.portare,
+.recensioni {
     display: flex;
     align-items: flex-start;
     padding: 2rem 4rem;
@@ -192,12 +197,14 @@ h2{
 /* PORTARE SECTION */
 
 .portare p {
-    padding: 1rem 0 1rem;
+    padding: 1.5rem 0 1.5rem;
     border-bottom: 1px solid lightgrey;
 }
+
 .portare i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 0.5rem;
+    align-items: center;
 }
 .portare .text-title {
     width: 45%;
@@ -227,15 +234,98 @@ h2 {
     width: 55%;
 }
 
+/* RECENSIONI */
+.recensioni {
+    display: flex;
+}
+.recensioni img {
+    width: 6%;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.recensioni i {
+    color: rgb(54, 133, 137);
+}
+.recensioni-card-header {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.recensioni-header h1 {
+    margin-bottom: 0.5rem;
+}
+.recensioni-span {
+    margin-bottom: 1rem;
+}
+.recensioni-title-text {
+    display: flex;
+}
+.recensioni-title span {
+    margin-left: 0.5rem;
+    font-size: 14px;
+}
+.recensioni-card {
+    margin-top: 2rem;
+    padding-bottom:2rem;
+    border-bottom: 1px solid lightgrey
+}
+.recensioni-header {
+    width: 85%;
+}
+
+/* DISPONIBILITÀ SECTION*/
+.disponibilita {
+    color: rgb(72, 72, 72);
+    padding: 2rem 4rem;
+}
+.calendars-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4rem 1rem;
+}
+.calendars-container i{
+    padding: 0.6rem 0.8rem;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 5;
+    grid-gap: 0.2rem;
+    margin-bottom: 2rem;
+}
+.month {
+    margin: 0 2rem;
+}
+.month-title {
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.num,
+.days {
+    padding: 0.5rem;
+    font-size: 11px;
+    text-align: center;
+}
+.num {
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
 /* TENERE SECTION */
 .tenere-card {
     display: flex;
+    grid-template-columns: repeat(3, 1fr, 2fr);
+    grid-template-rows: 1;
     padding-bottom: 2rem;
     margin-top: 2rem;
     border-bottom: 1px solid lightgrey
 }
 .tenere-card h2 {
-    width: 45%;
+    width:100%;
 }
 .tenere-card p {
     margin-bottom: 0.5rem;
@@ -243,11 +333,21 @@ h2 {
 .tenere .text-title {
     width: 80%;
 }
+.tenere-card a {
+    color: rgb(54, 133, 137);
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /* ESPERIENZE */
+.esperienze {
+    padding: 2rem 4rem;
+    padding-bottom: 3rem;
+}
 .esperienze-container {
     display: flex;
     color: rgb(72, 72, 72);
+    padding-bottom: 2rem;
 }
 .esperienze h1 {
     position: relative;
@@ -259,12 +359,39 @@ h2 {
     width: 100%;
     border-radius: 10px;
 }
+.img-container {
+    position: relative;
+}
+.img-online {
+    font-size: 12px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: black;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
 .esperienze-card {
     margin: 0.5rem;
     width: 30%;
 }
 .esperienze a {
     padding: 2rem 0;
+    text-decoration: none;
+    color: rgb(54, 133, 137);
+    font-weight: bold;
+}
+.esperienze a:hover {
+    text-decoration: underline;
+}
+.image-place {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.recensioni-span {
+    font-size: 14px;
 }
 
 /* FOOTER */
@@ -278,7 +405,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 2rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
 }
 .li-title {
     text-transform: uppercase;
@@ -335,20 +462,33 @@ footer {
     .prova .text-title {
         width: 50%;
     }
+    .tenere-text {
+        display: none;
+    }
+    .tenere .text-title {
+        width: 100%;
+    }
+    .recensioni img {
+        min-width: 7%;
+    }
 }
 @media screen and (max-width: 770px) {
     .cosa-farete,
     .prova,
     .host,
     .portare,
-    .partecipare {
+    .partecipare,
+    .recensioni,
+    .tenere {
         display: block;
         padding: 2rem;
     }
-    .text-title {
+    .text-title,
+    .recensioni-header {
         position: relative;
         top: 0rem;
         margin-bottom: 2rem;
+        margin-right: 2rem;
         font-size: 22px;
     }
     h2 {
@@ -364,6 +504,9 @@ footer {
     }
     .prova i {
         margin-left: 1rem;
+    }
+    .recensioni img {
+        min-width: 12%;
     }
    
 }
